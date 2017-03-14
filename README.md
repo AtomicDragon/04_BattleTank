@@ -3,3 +3,6 @@ An open-world head-to-head tank fight with simple AI, terrain, and advanced cont
 
 Part of the Complete Unreal Creator course on Udemy, see [here](https://www.udemy.com/unrealcourse?couplonCode=GitHubSpecial).
 Setup as part of a education series to teach UnrealEngine. 
+
+# Game Design Document (GDD)
+Update date in rotation world, tank, controls, AI, UI
