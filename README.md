@@ -6,3 +6,5 @@ Setup as part of a education series to teach UnrealEngine.
 
 # Game Design Document (GDD)
 Update date in rotation world, tank, controls, AI, UI
+
+Committed to Github and SourceTree
