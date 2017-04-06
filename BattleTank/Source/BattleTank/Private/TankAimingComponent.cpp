@@ -36,16 +36,10 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 	bool HaveAimSolution = UGameplayStatics::SuggestProjectileVelocity(this, OutLaunchVelocity, StartLocation, HitLocation, LaunchSpeed, false, 0, 0, ESuggestProjVelocityTraceOption::DoNotTrace);
 
 	//Calculate the OutLaunchVelocity
-	auto Time = GetWorld()->GetTimeSeconds();
 	if (HaveAimSolution) 
 	{
 		auto AimDirection = OutLaunchVelocity.GetSafeNormal();
 		MoveBarrelTowards(AimDirection);
-		UE_LOG(LogTemp, Warning, TEXT("%f Barrel Elevate Call"), Time);
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("%f No aim solve found"), Time);
 	}
 }
 
